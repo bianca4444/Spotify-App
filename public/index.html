@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- User Profile Section -->
+  <div id="app" class="app">
+    <div id="buttons-container">
+      <h2>Welcome to Spotify <span id="user-name"></span>!</h2>
+      <button id="login-btn" class="btn">Login</button>
+      <button id="logout-btn" class="btn hidden">Logout</button>
+    </div>
+      
+    <!-- Top 5 Artists -->
+    <div id="top-artists-section" class="section hidden">
+      <h3>Top 5 Artists</h3>
+      <ul id="top-artists-list"></ul>
+    </div>
+
+    <!-- Top 5 Albums -->
+    <div id="top-albums-section" class="section hidden">
+      <h3>Top 5 Albums</h3>
+      <ul id="top-albums-list"></ul>
+    </div>
+
+    <!-- Search Section -->
+    <div id="search-section" class="section hidden">
+      <h3>Search Songs or Artists</h3>
+      <input type="text" id="search-input" placeholder="Enter song or artist name">
+      <button id="search-btn" class="btn">Search</button>
+      <div id="search-results"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('login-btn').addEventListener('click', function() {
+      window.location.href = 'http://192.168.101.18:8888/login';  // Redirecționează utilizatorul către ruta /login
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* Stiluri de bază */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.section {
+  display: none;
+}
+
+.section.hidden {
+  display: block;
+}
+
+h1, h2, h3 {
+  color: #1db954; /* Culoare verde Spotify */
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  background: #333;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #1db954;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #1ed760;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  border: 2px solid #1db954;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Stiluri pentru butoane */
+.button-container {
+  display: flex; /* Activează alinierea flexbox */
+  justify-content: flex-start; /* Aliniază la stânga */
+  align-items: center; /* Aliniază vertical */
+  gap: 10px; /* Adaugă spațiu între butoane */
+}
